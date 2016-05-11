@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pageAbout.css">
+    <link rel="stylesheet" href="css/pageContacts.css">
+    <link rel="stylesheet" href="css/pageHistory.css">
+    <link rel="stylesheet" href="css/pageItem.css">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>if (/*@cc_on!@*/false) {            document.documentElement.className += ' ie10';        }</script>
+    <script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.formstyler.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/social-likes.min.js"></script>
+    <script src="js/zoomsl-3.0.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Этот скрипт на сервере удалять-->
+    <script src="js/jquery.pixlayout.0.9.6.js"></script>
+  </head>
+  <!-- http://jade-lang.com/reference/mixins/-->
+  <body>
+    <header>
+      <div class="reg">
+        <div class="wrapper clearfix">
+          <div class="login clearfix"><a href="#">Вход</a> / <a href="#">Регистрация</a>
+          </div>
+          <div class="select_panel clearfix">
+            <div class="language"><span>English</span>
+              <div class="dragger">
+                <ul>
+                  <li>Русский</li>
+                </ul>
+              </div>
+            </div>
+            <div class="place">Москва
+              <div class="dragger">
+                <ul>
+                  <li>
+                    <input placeholder="Ваш город" type="text">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="phone"><a href="tel: +880076329048">(800) 763-29-04</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="wrapper clearfix">
+          <div class="logo"><a href="#"></a></div>
+          <div class="menu_list">
+            <ul class="clearfix">
+              <li><a href="#">Новорожденные</a></li>
+              <li><a href="#">Мальчики</a></li>
+              <li><a href="#">Девочки</a></li>
+              <li><a href="#">Шерсть</a></li>
+            </ul>
+          </div>
+          <div class="events clearfix"><a href="#" class="favorite clearfix">
+              <div class="icon"></div><span>Избранное</span></a>
+            <div class="search">
+              <form>
+                <input type="text">
+                <input type="submit" value="">
+              </form>
+            </div><a href="#" class="basket">
+              <div class="number">14</div></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="detailed-search">
+      <div class="detailed-search-icon"></div>
+      <form action="" method="post" class="wrapper detailed-search-form">
+        <div class="justifyed">
+          <div class="label-select">
+            <select data-placeholder="Выбор раздела" class="js--select-styled">
+              <option value="value_1" disabled selected>Выбор раздела</option>
+              <option value="value_2">value_2</option>
+              <option value="value_3">value_3</option>
+              <option value="value_4">value_4</option>
+            </select>
+          </div>
+          <div class="label-select">
+            <select data-placeholder="Выбор коллекции" class="js--select-styled">
+              <option value="value_1" disabled selected>Выбор коллекции</option>
+              <option value="value_2">value_2</option>
+              <option value="value_3">value_3</option>
+              <option value="value_4">value_4</option>
+            </select>
+          </div>
+          <div class="label-select">
+            <select data-placeholder="Выбор размера" class="js--select-styled">
+              <option value="value_1" disabled selected>Выбор размера</option>
+              <option value="value_2">value_2</option>
+              <option value="value_3">value_3</option>
+              <option value="value_4">value_4</option>
+            </select>
+          </div>
+        </div>
+        <div class="justifyed">
+          <div class="label-slider"><span>Цена:</span>
+            <input type="text" class="range_min slider-input inp">
+            <div data-index="0" data-min_range="50" data-step="10" data-min-current="2000" data-max-current="7000" data-max_range="10000" class="slider-range"></div>
+            <input type="text" class="range_max slider-input inp">
+          </div>
+        </div>
+        <div class="detailed-search-params">
+          <div class="checkboxes">
+            <label class="checkbox">
+              <input type="checkbox" name="">
+              <div class="psevdochecbox"></div><span>новинки</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="">
+              <div class="psevdochecbox"></div><span>в наличии</span>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="">
+              <div class="psevdochecbox"></div><span>со скидкой</span>
+            </label>
+          </div>
+          <div class="radios">
+            <label class="radio">
+              <input type="radio" name="name">
+              <div class="psevdoradio"></div><span>рейтинг</span>
+            </label>
+            <label class="radio price-top">
+              <input type="radio" name="name">
+              <div class="psevdoradio"></div><span>цена</span>
+            </label>
+            <label class="radio price-bottom">
+              <input type="radio" name="name">
+              <div class="psevdoradio"></div><span>цена</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="name">
+              <div class="psevdoradio"></div><span>новинки</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="name">
+              <div class="psevdoradio"></div><span>название</span>
+            </label>
+          </div>
+        </div>
+        <input type="submit" value=" Искать" class="btn btn-xl">
+      </form>
+    </section>
+    <section class="about">
+      <div class="wrapper">
+        <div class="title">о компании / B2b</div>
+        <form action="js/ajax/send.php" method="post" class="main-form about-form">
+          <div class="grid">
+            <label class="grid-item"><span>Ф.И.О.</span>
+              <input type="text" name="name" placeholder="введите" class="inp required">
+            </label>
+            <label class="grid-item"><span>Должность</span>
+              <input type="text" name="name" placeholder="введите" class="inp required">
+            </label>
+            <label class="grid-item"><span>Компания</span>
+              <input type="text" name="name" placeholder="введите" class="inp required">
+            </label>
+            <label class="grid-item"><span>ИНН</span>
+              <input type="text" name="name" placeholder="введите" class="inp required">
+            </label>
+            <label class="grid-item"><span>Телефон</span>
+              <input type="text" name="name" placeholder="введите" class="inp required inp-phone">
+            </label>
+            <label class="grid-item"><span>E-mail</span>
+              <input type="text" name="name" placeholder="введите" class="inp required inp-mail">
+            </label>
+            <label class="grid-item"><span>Название</span>
+              <input type="text" name="name" placeholder="введите" class="inp required">
+            </label>
+            <label class="grid-item"><span>Город</span>
+              <input type="text" name="name" placeholder="введите" class="inp required">
+            </label>
+            <label class="grid-item"><span>Дом</span>
+              <input type="text" name="name" placeholder="введите" class="inp required">
+            </label>
+            <label class="grid-item"><span>Корпус</span>
+              <input type="text" name="name" placeholder="введите" class="inp">
+            </label>
+            <label class="grid-item"><span>Улица</span>
+              <input type="text" name="name" placeholder="введите" class="inp required">
+            </label>
+            <label class="grid-item"><span>Квартира/офис</span>
+              <input type="text" name="name" placeholder="введите" class="inp required">
+            </label>
+          </div><a href="" class="js-form-submit btn btn-xl">Отправить</a>
+        </form>
+      </div>
+    </section>
+    <!-- Этот скрипт на сервере удалять-->
+    <script type="text/javascript">$(function(){$.pixlayout({src: "images/temp/about.jpg",opacity: 0.5,top: 0,left: -4,center: false,clip: true,show: false});});</script>
+    <footer>
+      <div class="hover_menu">
+        <!--.arrow
+        .arrow-icon
+        
+        -->
+        <div class="menu">
+          <div class="wrapper">
+            <ul class="clearfix">
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Мой Hust&Claire</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_menu">
+          <div class="wrapper clearfix">
+            <div class="one mesh25">
+              <ul>
+                <li><a href="#">Режим работы</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Обмен/возврат</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#" class="boldfont">Распродажи и акции</a></li>
+                <li><a href="#">Вопрос-Ответ</a></li>
+                <li><a href="#">Блог</a></li>
+              </ul>
+            </div>
+            <div class="two mesh25">
+              <ul>
+                <li><a href="#">Миссия</a></li>
+                <li><a href="#">История</a></li>
+                <li><a href="#">Направления деятельности</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="three mesh25">
+              <ul>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Корзина</a></li>
+                <li><a href="#">Избранное</a></li>
+                <li><a href="#">Мои отзывы</a></li>
+                <li><a href="#">История заказов</a></li>
+                <li><a href="#">Поддержка пользователей</a></li>
+                <li><a href="#" class="boldfont">Оставить отзыв</a></li>
+              </ul>
+            </div>
+            <div class="forth mesh25"><a href="tel:88007632904">8 (800) 763-29-04</a>
+              <div class="line"></div>
+              <div class="society">
+                <div class="title">социальные сети</div>
+                <ul class="clearfix">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="last_info">
+        <div class="wrapper clearfix">
+          <p>Copyright (C) Hust and Claire 2016. All rights reserved.</p><a href="#"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

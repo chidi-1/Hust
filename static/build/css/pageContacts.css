@@ -1,0 +1,78 @@
+.contacts {
+  padding-top: 5px;
+}
+.contacts .title {
+  display: block;
+  font-family: 'pf_din_text_cond_proregular';
+  font-size: 28px;
+  color: #808080;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #e4e1de;
+}
+.contacts .justifyed {
+  padding-top: 11px;
+  padding-bottom: 17px;
+}
+.contacts .justifyed .contacts--data {
+  display: inline-block;
+  vertical-align: top;
+}
+.contacts .justifyed .contacts--data .phone,
+.contacts .justifyed .contacts--data .location {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4a4a;
+  font-family: 'elektra_light_proregular';
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+.contacts .justifyed .contacts--data .location {
+  padding-bottom: 13px;
+}
+.contacts .justifyed .contacts--data .location:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -1px;
+  background-image: url("../images/sprite/sprite.png");
+  background-position: -140px -114px;
+  width: 21px;
+  height: 30px;
+}
+.contacts .justifyed .contacts--data .phone:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 4px;
+  background-image: url("../images/sprite/sprite.png");
+  background-position: -197px -85px;
+  width: 21px;
+  height: 23px;
+}
+.contacts .justifyed .btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 525px;
+  height: 60px;
+  text-align: center;
+  line-height: 62px;
+  color: #808080;
+  font-size: 28px;
+  font-family: 'pf_din_text_cond_proregular';
+  text-transform: uppercase;
+}
+.contacts .map {
+  display: block;
+  height: 810px;
+}
+.contacts [class*="ymaps-2"][class*="-ground-pane"] {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  webkit-filter: grayscale(100%);
+}

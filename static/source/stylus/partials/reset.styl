@@ -1,0 +1,207 @@
+
+// Variables
+
+$cBlue_d = #1f2d4c
+$cBlue = #2b3e69
+$cBlue_l = #4a90e2
+$cYellow = #ffd200
+$cRed = #e84e4e
+$cBlack = #010101
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+  margin 0
+  padding 0
+  border 0
+  font inherit
+  font-size 100%
+  vertical-align baseline
+
+html
+  line-height 1
+
+html *
+  max-height 999999px //android font-size fix
+  -webkit-font-smoothing antialiased
+  
+table  
+  border-collapse  collapse 
+  border-spacing  0 
+ 
+caption, th, td  
+  text-align  left 
+  font-weight  normal 
+  vertical-align  middle 
+ 
+q, blockquote  
+  quotes  none 
+ 
+q:before, q:after, blockquote:before, blockquote:after  
+  content  "" 
+  content  none 
+ 
+a,img
+  border  none 
+  outline none
+
+a 
+  text-decoration  none
+ 
+article, aside, details, figcaption, figure, footer, header,  main, menu, nav, section, summary
+  display  block 
+
+.clearfix:after
+  content ''
+  clear both
+  display table
+
+body,
+a,
+input,
+textarea
+  font-family $f_elektra
+  font-size 16px
+  color #525252
+
+html
+body
+  margin 0
+  padding 0
+  width 100%
+
+body
+  font-family $f_elektra
+  font-size 16px
+  color #525252
+  min-height 100%
+  position relative
+  -webkit-text-size-adjust 100% // ios font-size fix
+  background #fff
+  min-width 1024px
+  padding-bottom 21px
+
+.wrapper
+  max-width 1000px
+  //padding 0 15px
+  margin 0 auto
+
+.rub
+  font-family $rub
+
+.page-wrap
+  min-height 100%
+  position relative
+  min-width 1200px
+  overflow hidden
+
+form,
+p,
+ul, ol,
+dl, dt, dd,
+h1, h2, h3, h4, h5, h6
+  margin 0 
+  padding 0 
+  font-weight normal 
+  list-style none 
+
+
+/***** ie fix ****/
+a img
+  border none
+
+
+input
+textarea
+  font-family 'Open Sans', sans-serif
+  color $cBlack
+  outline none
+
+button
+  font-family 'Open Sans', sans-serif
+
+a
+  outline none
+  text-decoration none
+
+.rubl
+  font-family 'als_rublregular'
+  font-weight normal
+  font-style normal
+
+.clear
+  clear both
+  font-size 0
+  line-height 0
+  height 0
+
+.clearfix:after
+.section:after
+  content "" 
+  display table 
+  clear both 
+
+// .section
+
+.pull-right
+  float right
+
+.pull-left
+  float left
+
+.text-center
+  text-align center
+
+.text-right
+  text-align right
+   
+.section
+  position relative
+
+.justifyed
+  display flex !important
+  justify-content  space-between
+  align-items flex-start
+  
+.width-wrap
+  display block
+  margin 0 auto
+  width 1140px
+
+// отступы между горизонтальными li
+ol, ul, .grid
+  list-style none 
+  font-size 0
+  line-height 0
+  letter-spacing -1px
+
+
+li, .grid-item
+  line-height normal
+  letter-spacing normal
+  display inline-block
+  vertical-align top 
+  zoom 1
+
+.hidden-block
+  display none !important
+
+.two--third
+  width 760px
+
+.roubl:before
+  content " o"
+  font-size inherit
+  color inherit
+  font-family als_rublregular
+  font-weight inherit

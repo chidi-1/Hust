@@ -1,0 +1,266 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+    section.detailed-search
+        .detailed-search-icon
+
+        form(action="" method="post").wrapper.detailed-search-form
+            .justifyed
+                .label-select
+                    select(data-placeholder='Выбор раздела').js--select-styled
+                        option(value="value_1" disabled selected) Выбор раздела
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор коллекции').js--select-styled
+                        option(value="value_1" disabled selected) Выбор коллекции
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор размера').js--select-styled
+                        option(value="value_1" disabled selected) Выбор размера
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+            .justifyed
+                .label-slider
+                    span Цена:
+                    input(type="text").range_min.slider-input.inp
+                    div(data-index="0" data-min_range="50" data-step="10" data-min-current="2000" data-max-current="7000" data-max_range="10000").slider-range
+                    input(type="text").range_max.slider-input.inp
+
+                //.label-color
+                //    span Цвет
+                //    label
+                //        input(type="checkbox" name="color")
+                //        div(style="background: #ffffff").psevdochecbox.check-white
+                //
+                //    label
+                //        input(type="checkbox" name="color")
+                //        div(style="background: #000000").psevdochecbox
+                //
+                //    label
+                //        input(type="checkbox" name="color")
+                //        div(style="background: #ff0000").psevdochecbox
+                //    label
+                //        input(type="checkbox" name="color")
+                //        div(style="background: #ffffff").psevdochecbox.check-white
+                //
+                //    label
+                //        input(type="checkbox" name="color")
+                //        div(style="background: #000000").psevdochecbox
+                //
+                //    label
+                //        input(type="checkbox" name="color")
+                //        div(style="background: #ff0000").psevdochecbox
+
+            .detailed-search-params
+                .checkboxes
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span новинки
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span в наличии
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span со скидкой
+
+                .radios
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span рейтинг
+
+                    label.radio.price-top
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio.price-bottom
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span новинки
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span название
+
+
+            input(type="submit" value=" Искать").btn.btn-xl
+
+    section.breadcrumbs
+        .wrapper
+            ul
+                li
+                    a(href="") мальчики
+                li
+                    span  HUST KIDS SWEATSHIRT MED H
+
+    section.item
+        .wrapper
+            .item__data.justifyed
+                .item__data-ratio
+                    span Рейтинг
+
+                    ul
+                        li.star
+                        li.star
+                        li.star
+                        li.star
+                        li
+                    span.number (15)
+
+
+                .item__data-social
+                    .social-likes.social
+                        div(data-media="" title="Поделиться изображением").social-pin.pinterest
+                        div(title="Поделиться ссылкой").social-vk.vkontakte
+                        div(title="Поделиться ссылкой").social-fb.facebook
+                        a(href="").social-in
+                        a(href="").social-share
+
+            .justifyed
+                .item__img
+                    .tabs.justifyed
+                        .hover-img.hidden-block
+                            img(src="images/img--item-2-s.jpg" data-large="images/img--item-2-s.jpg" alt="")
+
+                        ul.tabs__caption
+                            li.active
+                                img(src="images/img--item-1-s.jpg" alt="")
+                            li
+                                img(src="images/img--item-2-s.jpg" alt="")
+                            li
+                                img(src="images/img--item-3-s.jpg" alt="")
+
+                        .tabs__content.active
+                            img(src="images/img--item-1.jpg" data-large="images/img--item-1-l.jpg" class="js--img-zoom" alt="")
+                        .tabs__content
+                            img(src="images/img--item-2-s.jpg" data-large="images/img--item-1-l.jpg" class="js--img-zoom my-foto" alt="")
+                        .tabs__content
+                            img(src="images/img--item-3-s.jpg" data-large="images/img--item-1-l.jpg" class="js--img-zoom" alt="")
+
+                .item__info
+                    .item__info-about
+                        span.title HUST KIDS SWEATSHIRT MED H
+                        p L&aelig;kker sweatshirt i&nbsp;l&oslash;st strikket fleece, med et&nbsp;stort &laquo;H&raquo; broderet p&aring;&nbsp;forsiden. Stoffet er&nbsp;meleret bl&aring;t og&nbsp;hvidt. Sweatshirten er&nbsp;med raglan &aelig;rmer og&nbsp;den nederste kant er&nbsp;let afrundet.
+                        span.new  Новинка
+
+                    .item__info-params.justifyed
+                        ul
+                            li Коллекция:
+                                i.gray MED H
+                            li Состав:
+                                i.gray 80% Bomuld 20% Polyester
+                            li В наличии:
+                                i.red 99 шт.
+
+                        .delivery
+                            span Доставка
+                            i.icon
+
+                    form(action="js/ajax/add-basket.php" method="post").item__info-form
+                        input(type="hidden" name="id" value="id_01").inp-id
+                        .justifyed
+                            .label-select
+                                select(data-placeholder='Размер').js--select-styled
+                                    option(value="value_1") value_1
+                                    option(value="value_2") value_2
+                                    option(value="value_3") value_3
+                                    option(value="value_4") value_4
+
+                            //.label-color
+                            //    span Цвет
+                            //    label(data-img="images/img--item-1.jpg" data-img-l="images/img--item-1-l.jpg").has-img
+                            //        input(type="radio" name="color")
+                            //        div(style="background: #ffffff").psevdochecbox.check-white
+                            //
+                            //    label(data-img="images/img--item-1.jpg" data-img-l="images/img--item-1-l.jpg").has-img
+                            //        input(type="radio" name="color")
+                            //        div(style="background: #000000").psevdochecbox
+                            //
+                            //    label
+                            //        input(type="radio" name="color")
+                            //        div(style="background: #ff0000").psevdochecbox
+
+                        .justifyed
+                            div(data-price='23').counter
+                                input(type="text" name="amount" maxlength="3" value="1").inp.input-number
+                                a(href="").counter-add.js-counter-button.js-add
+                                a(href="").counter-remove.js-counter-button.js-remove
+
+                            .total
+                                span.roubl 23
+
+                            a(href="").btn.btn-l.btn-pink.js--add-basket
+                                span В корзину
+                                i.icon
+
+            .justifyed.item__links
+                ul.tags-list
+                    li
+                        a(href="") Lækker
+                    li
+                        a(href="") Sweatshirt
+                    li
+                        a(href="") Lækker
+                    li
+                        a(href="") Sweatshirt
+
+                a(href="" data-text-add="Добавить в избранное" data-text-remove="Удалить из избранного" data-id="id_01" data-action="js/ajax/send-ok.php" data-method="post").js--add-favourite.favourite
+                    .icon
+                    span    Добавить в избранное
+
+            .feedback
+                a(href="").js-feedback-open.feedback-open.btn.btn-xl Добавить отзыв
+
+                .feedback-hidden
+                    form(action="js/ajax/send-ok.php" method="post").main-form
+                        .grid
+                            label.grid-item
+                                span ФИО
+                                input(type="text" name="").inp.required
+                            label.grid-item
+                                span Телефон
+                                input(type="text" name="").inp.required.inp-phone
+                            label.grid-item
+                                span E-mail
+                                input(type="text" name="").inp.required.inp-mail
+
+                        textarea(name="" placeholder="Ваш отзыв...").inp.required
+
+                        a(href="").js-form-submit.btn.btn-xl Отправить
+
+    .slide_type
+        .wrapper
+            .title Похожие товары
+            .line
+            include partials/slider
+
+    // Этот скрипт на сервере удалять
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "images/temp/item.jpg",opacity: 0.5,top: 0,left: -4,center: false,clip: true,show: false});});
+
+
+
+
+

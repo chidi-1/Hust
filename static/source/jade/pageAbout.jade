@@ -1,0 +1,148 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+    section.detailed-search
+        .detailed-search-icon
+
+        form(action="" method="post").wrapper.detailed-search-form
+            .justifyed
+                .label-select
+                    select(data-placeholder='Выбор раздела').js--select-styled
+                        option(value="value_1" disabled selected) Выбор раздела
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор коллекции').js--select-styled
+                        option(value="value_1" disabled selected) Выбор коллекции
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор размера').js--select-styled
+                        option(value="value_1" disabled selected) Выбор размера
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+            .justifyed
+                .label-slider
+                    span Цена:
+                    input(type="text").range_min.slider-input.inp
+                    div(data-index="0" data-min_range="50" data-step="10" data-min-current="2000" data-max-current="7000" data-max_range="10000").slider-range
+                    input(type="text").range_max.slider-input.inp
+
+            .detailed-search-params
+                .checkboxes
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span новинки
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span в наличии
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span со скидкой
+
+                .radios
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span рейтинг
+
+                    label.radio.price-top
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio.price-bottom
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span новинки
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span название
+
+
+            input(type="submit" value=" Искать").btn.btn-xl
+
+    section.about
+        .wrapper
+            .title о компании / B2b
+
+            form(action="js/ajax/send.php" method="post").main-form.about-form
+                .grid
+                    label.grid-item
+                        span Ф.И.О.
+                        input(type="text" name="name" placeholder="введите").inp.required
+
+                    label.grid-item
+                        span Должность
+                        input(type="text" name="name" placeholder="введите").inp.required
+
+                    label.grid-item
+                        span Компания
+                        input(type="text" name="name" placeholder="введите").inp.required
+
+                    label.grid-item
+                        span ИНН
+                        input(type="text" name="name" placeholder="введите").inp.required
+
+                    label.grid-item
+                        span Телефон
+                        input(type="text" name="name" placeholder="введите").inp.required.inp-phone
+
+                    label.grid-item
+                        span E-mail
+                        input(type="text" name="name" placeholder="введите").inp.required.inp-mail
+
+                    label.grid-item
+                        span Название
+                        input(type="text" name="name" placeholder="введите").inp.required
+
+                    label.grid-item
+                        span Город
+                        input(type="text" name="name" placeholder="введите").inp.required
+
+                    label.grid-item
+                        span Дом
+                        input(type="text" name="name" placeholder="введите").inp.required
+
+                    label.grid-item
+                        span Корпус
+                        input(type="text" name="name" placeholder="введите").inp
+
+                    label.grid-item
+                        span Улица
+                        input(type="text" name="name" placeholder="введите").inp.required
+
+                    label.grid-item
+                        span Квартира/офис
+                        input(type="text" name="name" placeholder="введите").inp.required
+
+                a(href="").js-form-submit.btn.btn-xl Отправить
+
+    // Этот скрипт на сервере удалять
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "images/temp/about.jpg",opacity: 0.5,top: 0,left: -4,center: false,clip: true,show: false});});
+
+
+
+
+

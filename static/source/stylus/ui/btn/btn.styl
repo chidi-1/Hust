@@ -1,0 +1,66 @@
+.btn
+  box-sizing  border-box
+  text-align center
+  cursor pointer
+  transition background-color .4s ease-in-out, color .4s ease-in-out
+  border-radius 5px
+  padding 0
+  outline none
+  background transparent
+  display inline-block
+  vertical-align top
+  border 1px solid #e4e1de
+
+  span
+    display inline-block
+    vertical-align top
+    font-size 28px
+    color #ffffff
+    font-family $f_pfdin
+    text-transform uppercase
+
+  i.icon
+    position relative
+    display inline-block
+    vertical-align top
+    margin-left 25px
+    width 30px
+    height 29px
+    sprite($icon_basket_white)
+    margin-top 19px
+
+  &:hover
+      text-decoration none
+
+  &:active
+      text-decoration none
+
+  &_disabled,
+  &[disabled]
+      background #cfcfcf
+      box-shadow none
+
+.btn-pink
+  background #ff7dd2
+
+.btn-l
+  padding 0 24px
+  height 68px
+
+  span
+    line-height 68px
+
+  i
+    line-height 68px
+
+.btn-xl
+  display block
+  width 100%
+  text-align center
+  height 43px
+  line-height 42px
+  font-size 24px
+  font-family $f_pfdin
+  color #808080
+  text-transform uppercase
+

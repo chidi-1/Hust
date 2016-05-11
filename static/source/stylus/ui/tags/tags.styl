@@ -1,0 +1,69 @@
+.tags-list
+  padding-left 30px
+  position relative
+
+  li
+    display inline-block
+    vertical-align top
+    margin-right 15px
+    margin-top 2px
+
+    a
+      display block
+      font-family $f_elektra
+      font-size 16px
+      line-height 15px
+      color #4a4a4a
+      border-bottom 1px solid #4a4a4a
+
+    a:hover
+      border-bottom 1px solid transparent
+
+.tags-list:before
+  position absolute
+  content ''
+  left 0
+  top 5px
+  sprite($icon_tags)
+  
+.favourite
+  position relative
+  border 1px solid #d8d8d8
+  border-radius 4px
+  padding 4px 11px 6px 38px
+  overflow hidden
+
+  .icon
+    width 27px
+    left 0
+    top 0
+    bottom 0
+    position absolute
+    background #f9f8f7
+
+  .icon:before
+    position absolute
+    content "+"
+    left 50%
+    top 50%
+    margin-left -8px
+    margin-top -4px
+    font-family $f_elektra
+    font-size 24px
+    color #808080
+    width 14px
+    height 12px
+    line-height 12px
+
+  span
+    display block
+    font-family $f_pfdin
+    font-size 14px
+    color #808080
+
+.favourite.added
+  .icon:before
+    sprite($icon_heart)
+    margin-left -7px
+    margin-top -6px
+    content ""

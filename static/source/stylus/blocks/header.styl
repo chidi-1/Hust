@@ -1,0 +1,272 @@
+header
+  padding-bottom 19px
+  border-bottom  1px solid #fbe7f1
+
+  .reg
+    height 35px
+    background #e9e9e9
+    .login
+      float left
+      position relative
+      padding 10px 0 0 26px
+      a
+        color #787878
+      a:before
+        content ""
+        position absolute
+        top 9px
+        left 0
+        width 13px
+        height 14px
+        sprite($icon_person)
+
+    .select_panel
+      width 434px
+      float right
+      .language
+        float left
+        color #787878
+        margin 9px 0 0 30px
+        cursor pointer
+        position relative
+        &:before
+          content ""
+          position absolute
+          top 0
+          left -23px
+          width 15px
+          height 15px
+          sprite($icon_world)
+        &:after
+          content ""
+          position absolute
+          top 5px
+          right -18px
+          width 10px
+          height 7px
+          sprite($icon_arrow_bottom_s)
+        .dragger
+          position absolute
+          top 13px
+          left -31px
+          display none
+          ul
+            padding-top 20px
+            position relative
+            li
+              padding 0 15px 0 30px
+              line-height 25px
+              border 1px solid #d8d8d8
+              background #ffffff
+            &:before
+              content ""
+              position absolute
+              top 26px
+              left 10px
+              width 11px
+              height 11px
+              sprite($icon_arrow_right_sm)
+        &:hover
+          .dragger
+            display block
+      .place
+        float left
+        color #787878
+        margin 9px 0 0 68px
+        cursor pointer
+        position relative
+        &:before
+          content ""
+          position absolute
+          top 0
+          left -23px
+          width 15px
+          height 15px
+          sprite($icon_location)
+        &:after
+          content ""
+          position absolute
+          top 5px
+          right -18px
+          width 10px
+          height 7px
+          sprite($icon_arrow_bottom_s)
+        .dragger
+          position absolute
+          top 13px
+          left -31px
+          display none
+          ul
+            padding-top 20px
+            position relative
+            li
+              padding 0 0 0 22px
+              line-height 25px
+              border 1px solid #d8d8d8
+              background #ffffff
+              input
+                width 100px
+                padding 0 10px 0
+                border 0
+                outline 0
+                &::-webkit-input-placeholder
+                  font-style italic
+                &::-moz-placeholder
+                  font-style italic
+                /* Firefox 19+ */
+                &:-moz-placeholder
+                  font-style italic
+                /* Firefox 18- */
+                &:-ms-input-placeholder
+                  font-style italic
+            &:before
+              content ""
+              position absolute
+              top 26px
+              left 10px
+              width 11px
+              height 11px
+              sprite($icon_arrow_right_sm)
+      .phone
+        float right
+        padding-top 9px
+        a
+          font-size 18px
+          color #787878
+  .menu
+    .logo
+      margin 23px 0 0 0
+      float left
+      
+      a
+        display block
+        width 140px
+        height 80px
+        sprite($icon_logo)
+        opacity .8
+        
+        &:hover
+          opacity 1
+    .menu_list
+      float left
+      margin 54px 0 0 117px
+      ul
+        li
+          float left
+          margin 0 10px
+          a
+            color #525252
+            font-size 17px
+            text-transform uppercase
+            &:hover
+              color #000000
+    .events
+      float right
+      margin 45px 0 0 0
+      width 227px
+      .favorite
+        float left
+        border 1px solid #d8d8d8
+        width 107px
+        height 25px
+        border-radius 2px
+
+        .icon
+          width 27px
+          height 25px
+          position relative
+          background #f9f8f7
+          float left
+          &:before
+            content ""
+            position absolute
+            top 7px
+            left 7px
+            sprite($icon_heart)
+            width 14px
+            height 12px
+        span
+          font-size 14px
+          color #808080
+          padding 5px 0 0 38px
+          display block
+          font-family  $f_pfdin
+          
+      .search
+        float left
+        
+        form
+          position relative
+          input[type="text"]
+            display none
+            position absolute
+            top -2px
+            right 0
+            height 33px
+            border-radius 5px
+            border 1px solid #d1d1d1
+            width 130px
+            padding 0 40px 0 10px
+          input[type="submit"]
+            position relative
+            z-index 2
+            width 35px
+            margin-left 22px
+            height 30px
+            sprite($icon_search)
+            background-color transparent
+            border 0
+            cursor pointer
+            outline 0
+      .basket
+        float right
+        width 30px
+        height 30px
+        sprite($icon_basket)
+        position relative
+        .number
+          position absolute
+          top 0
+          left -9px
+          text-align center
+          line-height 15px
+          width 15px
+          height 15px
+          background #f00000
+          border-radius 2px
+          font-family $f_pfdin
+          font-size 12px
+          color #ffffff
+
+.breadcrumbs
+  padding 43px 0 0
+
+  ul
+    display block
+    padding-bottom 15px
+    border-bottom 1px solid #e4e1de
+
+    li
+      display inline-block
+      vertical-align top
+
+      a,
+      span
+        display block
+        font-family $f_pfdin
+        font-size 28px
+        color #808080
+        text-transform uppercase
+        margin-right 22px
+
+      a
+        text-decoration underline
+        position relative
+
+      a:after
+        position absolute
+        content "/"
+        top 0
+        right -14px
+
+

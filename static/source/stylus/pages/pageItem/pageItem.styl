@@ -1,0 +1,470 @@
+$f_elektra = 'elektra_light_proregular'
+$f_pfdin = 'pf_din_text_cond_proregular'
+$rub = 'als_rublregular'
+$cBlue_d = #1f2d4c
+$cBlue = #2b3e69
+$cBlue_l = #4a90e2
+$cYellow = #ffd200
+$cRed = #e84e4e
+$cBlack = #010101
+
+.item
+  padding 13px 0 0
+
+  &__data
+    width 485px
+    padding-bottom 10px
+
+    &-ratio
+      padding-top 6px
+
+      span,
+      ul,
+      li
+        display inline-block
+        vertical-align top
+
+      span
+        font-size 16px
+        font-family $f_elektra
+        color #8e8e8e
+        line-height 23px
+
+      ul
+        margin-left 10px
+        padding-right 5px
+        white-space nowrap
+
+        li
+          width 20px
+          height 19px
+          margin-right 6px
+          sprite($icon_star_empty)
+
+        li.star
+          sprite($icon_star)
+
+  &__img
+    display inline-block
+    vertical-align top
+    width 483px
+    position relative
+
+    .hover-img
+      position absolute
+      width 320px
+      height 463px
+      border 1px solid #ebebeb
+      z-index 10
+      display flex
+      justify-content center
+      align-items center
+      overflow hidden
+      right 0
+      top 0
+
+    .tabs__caption
+      display inline-block
+      vertical-align top
+      width 151px
+
+      li
+        margin-bottom 6px
+        border 1px solid #ebebeb
+        width 149px
+        height 149px
+
+        img
+          max-width 100%
+          max-height 100%
+
+      li.active
+        border 1px solid #c4c4c4
+
+      li:last-child
+        margin-bottom 0
+
+    .tabs__content
+      display none
+
+    .tabs__content.active
+      display inline-flex
+      justify-content center
+      align-items center
+      vertical-align top
+      width 320px
+      height 463px
+      border 1px solid #ebebeb
+
+      img
+        max-width 100%
+        max-height 100%
+
+  &__info
+    display inline-block
+    vertical-align top
+    width 500px
+
+    &-about
+      display block
+      padding-top 54px
+      text-align  center
+      padding-bottom 24px
+      border-bottom 1px solid #e4e1de
+
+      span,
+      p
+        display block
+        text-align center
+
+      .title
+        display block
+        font-family $f_pfdin
+        font-size 28px
+        color #808080
+        text-transform uppercase
+        text-decoration underline
+        margin-bottom 14px
+
+      p
+        font-family $f_elektra
+        font-size 16px
+        color #4a4a4a
+        padding-bottom 13px
+
+      span.new
+        display inline-block
+        vertical-align top
+        text-transform uppercase
+        font-family $f_elektra
+        font-size 16px
+        color #ffffff
+        padding 2px 11px 0
+        background #ff00a4
+        border-radius 3px
+
+    &-params
+      padding 15px 0 15px
+      border-bottom 1px solid #e4e1de
+
+      ul
+        display inline-block
+        vertical-align top
+        width 284px
+        border-right 1px solid #e4e1de
+
+        li
+          display block
+          padding-right 10px
+          font-family $f_elektra
+          font-size 16px
+          color #000000
+          margin-bottom 8px
+
+          i
+            display inline
+            padding-left 10px
+
+          i.gray
+            color #4a4a4a
+
+          i.red
+            color #ff0000
+
+        li:last-child
+          margin-bottom 0
+
+      .delivery
+        display inline-block
+        vertical-align top
+        text-align center
+        padding-top 26px
+        width 214px
+
+        span,
+        i
+          display inline
+
+        span
+          color #4a4a4a
+          font-size 16px
+          line-height 23px
+          font-family $f_elektra
+          padding-right 15px
+
+        i
+          display inline-block
+          vertical-align top
+          width 28px
+          height 23px
+          sprite($icon_delivery)
+
+    &-form
+      display block
+      padding 22px 0 0
+
+      .justifyed
+        padding-bottom 16px
+
+      .label-select
+        display inline-block
+        vertical-align top
+        width 278px
+
+        .js--select-styled
+          width 100%
+
+      .label-color
+        display inline-block
+        vertical-align top
+        width 210px
+        text-align right
+
+        span
+          display inline-block
+          vertical-align top
+          line-height 40px
+
+      .counter
+        display inline-block
+        vertical-align top
+        width 96px
+
+        .inp
+          width 60px
+          padding-left 0
+          text-align center
+
+      .total
+        display inline-block
+        vertical-align top
+        border 1px solid #e4e1de
+        border-radius 3px
+        height 66px
+        width 165px
+        text-align center
+
+        span
+          display inline-block
+          vertical-align top
+          line-height 66px
+          font-size 28px
+          color #808080
+          font-family $f_pfdin
+
+        span.roubl:before
+          padding-right 5px
+
+      .btn
+        display inline-block
+        vertical-align top
+        width 208px
+        padding 0
+
+        i.icon
+          sprite($icon_basket_white)
+
+  &__links
+    margin 6px 0 15px
+    padding 10px 0 10px
+    border-top 1px solid #e4e1de
+    border-bottom 1px solid #e4e1de
+
+    .tags-list
+      display inline-block
+      vertical-align top
+      margin-top 3px
+      white-space nowrap
+
+.feedback
+  .btn.open
+    background #eaeaea
+    border 1px solid #eaeaea
+
+  .btn
+    margin-bottom 29px
+    transition all 0.3s ease-in-out
+    -webkit-transition all 0.3s ease-in-out
+
+  .feedback-hidden
+    display none
+
+    .grid
+      margin-left -20px
+
+      label.grid-item
+        display inline-block
+        vertical-align top
+        margin-left 19px
+        width 490px
+        position relative
+        margin-bottom 18px
+
+        span
+          position absolute
+          text-align left
+          top 1px
+          left 1px
+          bottom 1px
+          background #f8f7f7
+          border-radius 5px 0 0 5px
+          width 140px
+          padding-left 14px
+          line-height 41px
+
+        .inp
+          width 490px
+
+    textarea.inp
+      padding 15px 25px
+      display block
+      border 1px solid #e4e1de
+      border-radius 4px
+      height 130px
+      resize none
+      margin-bottom 14px
+
+    textarea.inp::placeholder
+      font-style italic
+      color #c7c7c7
+
+    textarea.inp:focus::placeholder
+      opacity 0
+
+.magnifier
+  position absolute !important
+  width 500px !important
+  height 465px !important
+  left 50% !important
+  top 337px !important
+  z-index 100 !important
+  border 1px solid #ebebeb !important
+
+.detailed-search
+  .detailed-search-icon
+    display block
+    height 38px
+    position relative
+
+  .detailed-search-icon:before
+    position absolute
+    content ""
+    left 50%
+    top 50%
+    margin-left -14px
+    margin-top -4px
+    sprite($icon_arrow_bottom)
+
+  .wrapper.detailed-search-form
+    display none
+
+    .justifyed
+      margin-bottom 15px
+
+      .label-select
+        width 320px
+
+      .label-slider
+        display inline-block
+        vertical-align top
+        width 460px
+        white-space nowrap
+
+        span
+          display inline-block
+          vertical-align top
+          line-height 42px
+          font-size 16px
+          font-family $f_elektra
+          color #8e8e8e
+
+        .inp
+          display inline-block
+          vertical-align top
+          padding-left 0
+          width 98px
+          text-align center
+          margin 0 20px
+
+        .range-max.inp
+          margin-right 0
+
+        .slider-range
+          display inline-block
+          vertical-align top
+          width 235px
+          position relative
+          border-top 1px solid #cfcfcf
+          margin-top 19px
+
+          .ui-slider-handle
+            width 22px
+            height 22px
+            border-radius 22px
+            background #cfcfcf
+            outline none
+            position absolute
+            margin-top -11px
+            cursor pointer
+
+      .label-color
+        display inline-block
+        vertical-align top
+        width 460px
+        text-align right
+
+        span
+          line-height 40px
+
+    .detailed-search-params
+      margin-bottom 20px
+      border 1px solid #e2e0dd 
+      border-radius 2px 
+      text-align center
+      padding 5px 0
+
+      .checkboxes
+        display inline-block
+        vertical-align top
+        border-right 1px solid #d4d1cc
+        padding 3px 0
+
+        .checkbox
+          display inline-block
+          vertical-align top
+          margin-right 20px
+
+      .radios
+        display inline-block
+        vertical-align top
+        padding 3px 0 3px 20px
+
+        .radio
+          display inline-block
+          vertical-align top
+          margin-right 20px
+
+        .radio:last-child
+          margin-right 0
+
+        .price-bottom,
+        .price-top
+          padding-right 25px
+          position relative
+
+        .price-bottom:after,
+        .price-top:after
+          position absolute
+          content ""
+          right 0
+          top 3px
+
+        .price-top:after
+          sprite($icon_price_top)
+        .price-bottom:after
+          sprite($icon_price_bottom)
+
+.ie10
+  .tabs__content.active
+    display inline-block
+    vertical-align top

@@ -1,0 +1,80 @@
+$f_elektra = 'elektra_light_proregular'
+$f_pfdin = 'pf_din_text_cond_proregular'
+$rub = 'als_rublregular'
+$cBlue_d = #1f2d4c
+$cBlue = #2b3e69
+$cBlue_l = #4a90e2
+$cYellow = #ffd200
+$cRed = #e84e4e
+$cBlack = #010101
+
+.contacts
+  padding-top 5px
+
+  .title
+    display block
+    font-family $f_pfdin
+    font-size 28px
+    color #808080
+    text-transform uppercase
+    text-decoration underline
+    margin-bottom 14px
+    padding-bottom 17px
+    border-bottom 1px solid #e4e1de
+
+  .justifyed
+    padding-top 11px
+    padding-bottom 17px
+
+    .contacts--data
+      display inline-block
+      vertical-align top
+
+      .phone,
+      .location
+        display block
+        padding-left 35px
+        position relative
+        font-size 16px
+        line-height 22px
+        color #4a4a4a
+        font-family $f_elektra
+        text-transform uppercase
+        padding-top 5px
+
+      .location
+        padding-bottom 13px
+
+      .location:before
+        position absolute
+        content ""
+        left 0
+        top -1px
+        sprite($icon_location_map)
+
+      .phone:before
+        position absolute
+        content ""
+        left 0
+        top 4px
+        sprite($icon_phone_map)
+
+    .btn
+      display inline-block
+      vertical-align top
+      width 525px
+      height 60px
+      text-align center
+      line-height 62px
+      color #808080
+      font-size 28px
+      font-family $f_pfdin
+      text-transform uppercase
+
+  .map
+    display block
+    height 810px
+
+  [class*="ymaps-2"][class*="-ground-pane"]
+    filter grayscale(100%)
+    webkit-filter grayscale(100%)

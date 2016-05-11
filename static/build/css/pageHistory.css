@@ -1,0 +1,36 @@
+.history {
+  padding-top: 20px;
+}
+.history .title {
+  display: block;
+  font-family: 'pf_din_text_cond_proregular';
+  font-size: 28px;
+  color: #808080;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #e4e1de;
+}
+.history--content {
+  padding-top: 5px;
+}
+.history--content-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto 32px;
+}
+.history--content p {
+  display: block;
+  margin-bottom: 26px;
+  font-family: 'elektra_light_proregular';
+  font-size: 16px;
+  line-height: 26px;
+  color: #4a4a4a;
+}
+.history--content strong {
+  font-weight: bold;
+}
+.history--content i {
+  font-style: italic;
+}

@@ -1,0 +1,492 @@
+
+#slider
+  max-width 1910px
+  margin 0 auto 72px
+
+  .slider_block
+    *
+      outline 0
+    .slick-slide
+      text-align center
+      & > div
+        width 100%
+        overflow hidden
+        position relative
+        & > img
+          height 100%
+          position relative
+          top 0
+          left 50%
+          margin-left -956px
+        .content
+          position absolute
+          top 50%
+          left 50%
+          margin-left -583px
+          margin-top -73px
+          width 1166px
+          height 146px
+          border 3px solid #ffffff
+          text-align center
+          .blur
+            position relative
+            width 100%
+            height 100%
+            .blur_img
+              position absolute
+              top 0
+              left 0
+              width 100%
+              height 100%
+              background url("../images/slider_1.jpg") no-repeat center center
+              filter blur(5px)
+          .text
+            position absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+            img
+              padding-top 45px
+              display inline-block
+    .slick-dots
+      text-align center
+      position absolute
+      bottom -65px
+      width 100%
+
+      li
+        width 24px
+        height 24px
+        border-radius 24px
+        border 3px solid #ceccc6
+        display inline-block
+        margin 0 15px
+        vertical-align top
+        position relative
+        cursor pointer
+
+        button
+          display none
+
+        &.slick-active:before
+          content ""
+          top 3px
+          left 3px
+          display block
+          width 12px
+          height 12px
+          background #e2e0dd
+          border-radius 12px
+          margin 6px auto 0
+    .slick-prev
+      width 84px
+      height 600px
+      background rgba(255, 255, 255, 0.7) url("../images/lerft.png") no-repeat 20px center
+      float left
+      cursor pointer
+      border 0
+      padding 0
+      position absolute
+      z-index 2
+      top 56px
+      left 0
+
+      @media md
+        display none !important
+
+      &:hover
+        background rgba(255, 255, 255, 0.7) url("../images/lerft.png") no-repeat -57px center
+    .slick-next
+      width 84px
+      height 600px
+      background rgba(255, 255, 255, 0.7) url("../images/right.png") no-repeat 30px center
+      float left
+      cursor pointer
+      border 0
+      padding 0
+      position absolute
+      z-index 2
+      top 56px
+      right 0
+
+      @media md
+        display none !important
+
+      &:hover
+        background rgba(255, 255, 255, 0.7) url("../images/right.png") no-repeat -48px center
+  .line
+    width 100%
+    border-top 1px solid #f5e6f0
+    position relative
+    z-index 2
+#children
+  max-width 1100px
+  margin 110px auto 50px
+  ul
+    li
+      float left
+      margin-right 80px
+      a
+        opacity .9
+        &:hover
+          opacity 1
+      &:last-child
+        margin-right 0
+#shop
+  margin-bottom 50px
+  ul
+    li
+      float left
+      a
+        img
+          display block
+        opacity 0.9
+        display block
+        &:hover
+          opacity 1
+      &:last-child
+        margin-left 20px
+#advice
+  .title
+    font-size 28px
+    text-transform uppercase
+    text-align center
+    color #808080
+  .line
+    border-top 1px solid #e2e0dd
+    margin 22px 0
+  form
+    position relative
+    .search
+      width 910px
+      height 42px
+      padding 0 10px 0 80px
+      border 1px solid #dfdfdf
+      border-radius 3px
+
+    .icon_search
+      position absolute
+      top 1px
+      left 1px
+      padding 0
+      border 0
+      outline none
+      background-color #f8f7f6
+      width 62px
+      height 41px
+
+    .icon_search:after
+      position absolute
+      content ""
+      sprite($icon_search)
+      top 50%
+      left 50%
+      margin-left -14px
+      margin-top -14px
+
+    input[type="text"]
+    .inputs
+      .jq-selectbox
+        margin-top 25px
+        .jq-selectbox__select
+          background #ffffff
+          width 356px
+          height 38px
+          box-shadow none
+          text-shadow none
+          padding-left 83px
+          line-height 38px
+          position relative
+          border 1px solid #dfdfdf
+
+          &:before
+            position absolute
+            top 0
+            left 0
+            content ""
+            width 61px
+            height 38px
+            background #f8f7f6
+
+          &:after
+            position absolute
+            content ""
+            sprite($icon_arrow_right)
+            top 11px
+            left 19px
+
+          .jq-selectbox__select-text
+            font-size 16px
+            color #8c8c8c
+            font-family $f_elektra
+          .jq-selectbox__trigger
+            border 0
+            .jq-selectbox__trigger-arrow
+              sprite($icon_arrow_bottom_s)
+              top 17px
+              width 10px
+              height 7px
+              border 0
+        .jq-selectbox__dropdown
+          ul
+            li
+              display  list-item
+      & > div:first-child
+        float left
+        width 50%
+      & > div:last-child
+        float left
+        width 50%
+        .jq-selectbox
+          margin-left 15px
+        .two
+          margin-left 15px
+          & > div
+            float left
+            .jq-selectbox
+              margin-top 25px
+              margin-left 0
+              .jq-selectbox__select
+                width 100px
+            &:last-child
+              margin-left 25px
+        .color
+          margin-top 23px
+          .title
+            font-size 16px
+            padding 13px 0 0 17px
+            color #8c8c8c
+            float left
+            text-transform none
+          ul
+            float left
+            margin-left 12px
+            li
+              float left
+              margin 0 6px
+              a
+                width 40px
+                height 40px
+                display block
+                border-radius 40px
+                position relative
+
+                &.active:before
+                  position absolute
+                  top 3px
+                  left 3px
+                  content ""
+                  width 28px
+                  height 28px
+                  border 3px solid #ffffff
+                  border-radius 40px
+
+              &:first-child
+                a
+                  background #ffffff
+                  border 1px solid #ecece9
+              &:nth-child(2)
+                a
+                  background #cecece
+                  border 1px solid #ecece9
+              &:nth-child(3)
+                a
+                  background #000000
+                  border 1px solid #ecece9
+              &:nth-child(4)
+                a
+                  background #684410
+                  border 1px solid #ecece9
+              &:nth-child(5)
+                a
+                  background #c14049
+                  border 1px solid #ecece9
+              &:nth-child(6)
+                a
+                  background #0a96ca
+                  border 1px solid #ecece9
+              &:nth-child(7)
+                a
+                  background #6fb66d
+                  border 1px solid #ecece9
+
+    .checkbox_block
+      width 998px
+      height 38px
+      margin-top 19px
+      border 1px solid #e2e0dd
+      border-radius 2px
+      text-align center
+      input[type="checkbox"]
+        display none
+      & > div
+        display inline-block
+        vertical-align top
+        margin 12px 18px 0
+        label
+          font-size 16px
+          font-family $f_elektra
+          color #8c8c8c
+          cursor pointer
+          position relative
+          &:before
+            position absolute
+            top -1px
+            left -27px
+            content ""
+            width 18px
+            height 18px
+            border 2px solid #cccac4
+            border-radius 3px
+          &:after
+            display none
+            position absolute
+            top 5px
+            left -21px
+            content ""
+            width 10px
+            height 10px
+            background #e2e0dd
+            border-radius 10px
+        input:checked + label
+          &:after
+            display block
+    .line
+      margin 27px 0
+    .search_container
+      width 991px
+      height 42px
+      border 1px solid #e2e0dd
+      border-radius 3px
+      input
+        width 100%
+        height 100%
+        background #ffffff
+        font-size 24px
+        color #808080
+        line-height 42px
+        font-family  $f_pfdin
+        text-align center
+        text-transform uppercase
+        border 0
+        outline 0
+        cursor pointer
+        &:hover
+          background #e9e9e9
+.slide_type
+  margin-bottom 60px
+  .title
+    font-size 28px
+    color #808080
+    font-family  $f_pfdin
+    text-decoration underline
+    text-transform uppercase
+  .line
+    border-top 1px solid #e2e0dd
+    margin 23px 0
+  .new_slider
+    *
+      outline 0 !important
+    .slick-slide
+      text-align center
+      margin 0 1px
+      .grid
+        width 319px
+        height 348px
+        margin 0 auto
+        border 1px solid #e2e0dd
+        border-radius 3px
+        .table
+          display table
+          width 100%
+          vertical-align middle
+          height 100%
+          .table-cell
+            display table-cell
+            vertical-align middle
+        &:hover
+          border 1px solid #C3C3C3
+      p
+        text-align center
+        color #000000
+        padding 13px 0
+      span
+        display block
+        font-size 28px
+        color #808080
+        text-align center
+      img
+        display inline-block
+      .del
+        position relative
+        &:before
+          content ""
+          position absolute
+          top 13px
+          width 100px
+          transform rotate(8deg)
+          height 2px
+          background red
+      .discount_price
+        color red
+
+    .slick-prev
+      width 34px
+      height 111px
+      background url("../images/lerft.png") no-repeat 1px center
+      float left
+      cursor pointer
+      border 0
+      padding 0
+      position absolute
+      top 120px
+      left -50px
+
+      &:hover
+        background url("../images/lerft.png") no-repeat -76px center
+
+    .slick-next
+      width 34px
+      height 111px
+      background url("../images/right.png") no-repeat 1px center
+      float left
+      cursor pointer
+      border 0
+      padding 0
+      position absolute
+      top 120px
+      right -50px
+
+      &:hover
+        background url("../images/right.png") no-repeat -77px center
+
+.last_info
+  min-height 47px
+  border-bottom 1px solid #f5e6f0
+  margin-bottom 24px
+  p
+    float left
+    padding-top 18px
+    color #000000
+  a
+    float right
+    margin 14px 6px 0 0
+    display block
+    width 102px
+    height 22px
+    //bg((-208px) -43px)
+
+/*@media only screen and (max-width 1044px)*/
+  /*#slider*/
+    /*.slider_block*/
+
+      //.owl-buttons
+        //position absolute;
+        //width 100%;
+        //top 45px;
+        //left 0;
+        //height 0;
+        /*.owl-prev,*/
+		/*.owl-next*/
+          //height 100%;*/

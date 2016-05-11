@@ -1,0 +1,36 @@
+doctype html
+html
+    block vars
+    head
+        meta(charset='utf-8')
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        title #{title}
+        link(rel='icon' href='images/favicon.ico' type='image/x-icon')
+
+        link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+        link(rel='stylesheet', href="css/style.css")
+        link(rel='stylesheet', href="css/pageAbout.css")
+        link(rel='stylesheet', href="css/pageContacts.css")
+        link(rel='stylesheet', href="css/pageHistory.css")
+        link(rel='stylesheet', href="css/pageItem.css")
+
+        script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+        script if (/*@cc_on!@*/false) {            document.documentElement.className += ' ie10';        }
+
+        script(type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+        script(src="js/jquery.min.js")
+        script(src="js/jquery-ui.js")
+        script(src="js/jquery.formstyler.js")
+        script(src="js/slick.min.js")
+        script(src="js/social-likes.min.js")
+        script(src="js/zoomsl-3.0.js")
+        script(src="js/app.js")
+        // Этот скрипт на сервере удалять
+        script(src="js/jquery.pixlayout.0.9.6.js")
+
+    include mixins
+
+    body
+        include header
+        block content
+        include  footer

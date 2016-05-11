@@ -1,0 +1,223 @@
+.inp
+  box-sizing border-box
+  background transparent
+  // background #000
+  box-shadow none
+  outline none
+  width 100%
+  height 40px
+  display block
+  font-size 16px
+  font-family $f_elektra
+  color #8c8c8c
+  border 1px solid #e4e1de
+  border-radius 4px
+  -webkit-appearance none
+  transition-property background-color border-color
+  transition-duration 0.4s
+  padding-left 170px
+
+.inp::placeholder
+  opacity 1
+  font-size 16px
+  font-family $f_elektra
+  color #8c8c8c
+
+.inp::placeholder:focus
+  opacity 0
+
+.inp.error
+  border 1px solid $cRed !important
+
+.label-color
+  label
+    display inline-block
+    vertical-align top
+    margin 0 4px
+    cursor pointer
+
+  input
+    display none
+
+  .psevdochecbox
+    display block
+    width 40px
+    height 40px
+    border-radius 40px
+    position relative
+
+  input:checked + .psevdochecbox:after
+    position absolute
+    content ''
+    width 28px
+    height 28px
+    border-radius 31px
+    top 3px
+    left 3px
+    border 3px solid #ffffff
+
+  .psevdochecbox.check-white
+    border 1px solid #ecece9
+    width 38px
+    height 38px
+
+  input:checked + .psevdochecbox.check-white:after
+    border 3px solid #ecece9
+    width 26px
+    height 26px
+
+  label:last-child
+    margin-right 0
+
+.js--select-styled
+  width 100%
+
+  .jq-selectbox__select.focused,
+  .jq-selectbox__select
+    background #fff
+    height 38px
+    box-shadow none
+    text-shadow none
+    padding-left 83px
+    line-height 38px
+    position relative
+    border 1px solid #dfdfdf
+
+  .jq-selectbox__trigger-arrow
+    sprite($icon_arrow_bottom_s)
+    top 17px
+    width 10px
+    height 7px
+    border 0
+
+  .jq-selectbox__trigger
+    position absolute
+    top 0
+    right 0
+    width 34px
+    height 100%
+    border none
+
+  .jq-selectbox__select-text
+    font-size 16px
+    color #8c8c8c
+    font-family $f_elektra
+
+  .jq-selectbox__select:after
+    position absolute
+    content ""
+    sprite($icon_arrow_right)
+    width 22px
+    height 15px
+    top 11px
+    left 19px
+
+  .jq-selectbox__select:before
+    position absolute
+    top 0
+    left 0
+    content ""
+    width 61px
+    height 38px
+    background #f8f7f6
+
+  .jq-selectbox__dropdown
+    ul
+      li
+        display block
+
+      li.disabled
+        background transparent
+
+.counter
+  position relative
+  border 1px solid #dfdfdf
+  border-radius 3px
+  height 66px
+  background #f8f7f7
+  overflow hidden
+
+  .inp
+    display inline-block
+    vertical-align top
+    height 66px
+    text-align center
+    color #8e8e8e
+    font-size 24px
+    border none
+    outline none
+    background transparent
+
+  .js-counter-button
+    position absolute
+    background #ffffff
+    width 36px
+    height 33px
+
+  .counter-add
+    top 0
+
+  .counter-remove
+    bottom 0
+
+  .js-counter-button:after
+    position absolute
+    content ""
+    top 50%
+    left 50%
+    width 10px
+    height 7px
+    margin-left -5px
+    margin-top -3px
+
+  .counter-add:after
+    sprite($icon_arrow_top_s)
+
+  .counter-remove:after
+    sprite($icon_arrow_bottom_s)
+
+label.checkbox,
+label.radio
+  cursor pointer
+
+  input
+    display none
+
+  .psevdoradio
+    display inline-block
+    vertical-align top
+    width 18px
+    height 18px
+    border 2px solid #cccac4
+    border-radius 18px
+    margin-right 5px
+    position relative
+
+  .psevdochecbox
+    display inline-block
+    vertical-align top
+    width 18px 
+    height 18px 
+    border 2px solid #cccac4 
+    border-radius 3px
+    margin-right 5px
+    position relative
+
+  input:checked + .psevdoradio:after,
+  input:checked + .psevdochecbox:after
+    position absolute
+    top 4px
+    left 4px
+    content ""
+    width 10px
+    height 10px
+    background #e2e0dd
+    border-radius 10px
+
+  span
+    display inline-block
+    vertical-align top
+    color #8c8c8c
+    font-size 16px
+    line-height 22px
+    font-family $f_elektra
