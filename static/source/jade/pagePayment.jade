@@ -1,0 +1,140 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+    section.detailed-search
+        .detailed-search-icon
+
+        form(action="" method="post").wrapper.detailed-search-form
+            .justifyed
+                .label-select
+                    select(data-placeholder='Выбор раздела').js--select-styled
+                        option(value="value_1" disabled selected) Выбор раздела
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор коллекции').js--select-styled
+                        option(value="value_1" disabled selected) Выбор коллекции
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор размера').js--select-styled
+                        option(value="value_1" disabled selected) Выбор размера
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+            .justifyed
+                .label-slider
+                    span Цена:
+                    input(type="text").range_min.slider-input.inp
+                    div(data-index="0" data-min_range="50" data-step="10" data-min-current="2000" data-max-current="7000" data-max_range="10000").slider-range
+                    input(type="text").range_max.slider-input.inp
+
+            .detailed-search-params
+                .checkboxes
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span новинки
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span в наличии
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span со скидкой
+
+                .radios
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span рейтинг
+
+                    label.radio.price-top
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio.price-bottom
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span новинки
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span название
+
+
+            input(type="submit" value=" Искать").btn.btn-xl
+
+    section.text
+        .wrapper
+            .title.border-bottom Оплата
+
+            .border-bottom
+                h3 НАЛИЧНЫМИ КУРЬЕРУ
+                p По&nbsp;Москве в&nbsp;пределах МКАД и&nbsp;за&nbsp;пределы МКАД (но&nbsp;не&nbsp;более 15&nbsp;км) вы&nbsp;можете оплатить ваш заказ наличными курьеру. Оплата за&nbsp;доставленный товар, включая доставку, производится в&nbsp;рублях после обязательного осмотра товара. Претензии к&nbsp;внешнему виду и&nbsp;комплектации доставленного Вам товара в&nbsp;соответствии со&nbsp;ст.&nbsp;458 и&nbsp;459&nbsp;ГК РФ&nbsp;вы&nbsp;можете предъявить только до&nbsp;передачи Вам товара Продавцом.
+                p Если что-то вам не&nbsp;подошло, вы&nbsp;можете отказаться от&nbsp;заказа полностью или частично, оплатив только те&nbsp;товары, которые хотите приобрести. Если вы&nbsp;отказываетесь от&nbsp;всего заказа, вы&nbsp;оплачиваете только доставку.
+
+            .border-bottom
+                h3 БАНКОВСКОЙ КАРТОЙ ИЛИ ЛЮБЫМ ДРУГИМ УДОБНЫМ ДЛЯ ВАС СПОСОБОМ ОПЛАТЫ В&nbsp;ПЛАТЕЖНОЙ СИСТЕМЕ ROBOKASSA
+                p Оплатить ваш заказ вы&nbsp;можете без комиссии прямо на&nbsp;нашем сайте, выбрав способ оплаты &laquo;В&nbsp;платежной системе на&nbsp;сайте&raquo;. Система электронных платежей Robokassa, через которую мы&nbsp;принимаем оплату, является безопасной, 100% защищенной и&nbsp;самой надежной. Вам будет необходимо ввести данные банковской карты: номер, срок действия, имя и&nbsp;фамилию держателя карты, а&nbsp;также 3&nbsp;цифры с&nbsp;оборотной стороны (код CVV/CVC). Не&nbsp;забудьте указать email: на&nbsp;него придет информация о&nbsp;платеже.
+                p Помимо банковских карт (в&nbsp;любой валюте) вы&nbsp;можете выбрать любой другой удобный для вас способ оплаты, предложенный Robokassa: оплата с&nbsp;помощью сервисов мобильная коммерция (МТС, Мегафон, Билайн), платежи через интернет-банк ведущих Банков&nbsp;РФ, платежи через банкоматы, электронными деньгами (Яндекс.Деньги, WebMoney), через терминалы мгновенной оплаты, а&nbsp;также с&nbsp;помощью приложения для iPhone.
+                p Яндекс.Деньги&nbsp;&mdash; доступный и&nbsp;безопасный способ оплаты товаров и&nbsp;услуг через интернет. Пополнение счета и&nbsp;оплата заказов происходят в&nbsp;реальном времени на&nbsp;сайте платежной системы.
+
+            ul.payment-list.border-bottom
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-visa.png" alt /)
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-master.png" alt /)
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-wm.png" alt /)
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-yandex.png" alt /)
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-qiwi.png" alt /)
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-euro.png" alt /)
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-svyaz.png" alt /)
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-eleksnet.png" alt /)
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-mts.png" alt /)
+                li
+                    a(href="").img
+                        img(src="images/logo/logo-megafon.png" alt /)
+
+
+    // Этот скрипт на сервере удалять
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "images/temp/payment.jpg",opacity: 0.5,top: 0,left: -4,center: false,clip: true,show: false});});
+
+
+
+
+

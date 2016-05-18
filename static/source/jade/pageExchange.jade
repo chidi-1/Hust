@@ -1,0 +1,113 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+    section.detailed-search
+        .detailed-search-icon
+
+        form(action="" method="post").wrapper.detailed-search-form
+            .justifyed
+                .label-select
+                    select(data-placeholder='Выбор раздела').js--select-styled
+                        option(value="value_1" disabled selected) Выбор раздела
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор коллекции').js--select-styled
+                        option(value="value_1" disabled selected) Выбор коллекции
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор размера').js--select-styled
+                        option(value="value_1" disabled selected) Выбор размера
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+            .justifyed
+                .label-slider
+                    span Цена:
+                    input(type="text").range_min.slider-input.inp
+                    div(data-index="0" data-min_range="50" data-step="10" data-min-current="2000" data-max-current="7000" data-max_range="10000").slider-range
+                    input(type="text").range_max.slider-input.inp
+
+            .detailed-search-params
+                .checkboxes
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span новинки
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span в наличии
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span со скидкой
+
+                .radios
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span рейтинг
+
+                    label.radio.price-top
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio.price-bottom
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span новинки
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span название
+
+
+            input(type="submit" value=" Искать").btn.btn-xl
+
+    section.text
+        .wrapper
+            .title.border-bottom обмен / возврат
+
+            .border-bottom
+                p Если вам не&nbsp;подошла купленная у&nbsp;нас вещь по&nbsp;цвету, фасону, размеру или каким-то другим параметрам, мы&nbsp;с&nbsp;удовольствием обменяем ее&nbsp;на&nbsp;более подходящий товар или вернем вам деньги.
+                p Вы&nbsp;всегда можете отказаться от&nbsp;заказа полностью или частично до&nbsp;его получения, при получении заказа от&nbsp;курьера или после получения заказа в&nbsp;течение 7&nbsp;дней.
+                p Возврат товара надлежащего качества возможен при сохранении всех свойств, внешнего вида (отсутствие следов эксплуатации), упаковки и&nbsp;ярлыков товара. В&nbsp;этом случае вам возвращается только стоимость товара. Стоимость доставки и&nbsp;обратной пересылки не&nbsp;компенсируется. При частичном возврате стоимость доставки заказа не&nbsp;возвращается.
+
+            .border-bottom
+                h3 Обращаем ваше внимание!
+                p К&nbsp;обмену и&nbsp;возврату не&nbsp;подлежат швейные и&nbsp;трикотажные изделия (чулочно-носочные изделия и&nbsp;белье), а&nbsp;также предметы личной гигиены (заколки, расчески). С&nbsp;более полным списком вы&nbsp;можете ознакомиться в&nbsp;Постановлении Правительства РФ&nbsp;от&nbsp;19&nbsp;января 1998&nbsp;г. N&nbsp;55, п.&nbsp;5
+
+            .border-bottom
+                h3 Возврат товара ненадлежащего качества
+                p Под товаром ненадлежащего качества подразумевается товар, не&nbsp;способный обеспечить свои функциональные качества из-за существенного недостатка. К&nbsp;товару ненадлежащего качества также относится товар, который возвращается Вами по&nbsp;причине несоответствия заказанному товару (артикул, цвет, фасон, качество, размер).
+                p Товар ненадлежащего качества так&nbsp;же должен быть возвращен нам в&nbsp;оригинальной упаковке с&nbsp;сохранением всех свойств товара, ярлыков и&nbsp;бирок.
+                p Отличие элементов дизайна или оформления от&nbsp;заявленных в&nbsp;описании на&nbsp;сайте не&nbsp;является неисправностью или не&nbsp;функциональностью товара. Обратите внимание, что внешний вид, комплектность товара, а&nbsp;также комплектность всего заказа могут быть проверены вами в&nbsp;момент доставки товара.
+                p При возврате товара ненадлежащего качества мы&nbsp;возвращаем вам стоимость товара, доставки и&nbsp;обратной пересылки. При частичном возврате стоимость доставки заказа не&nbsp;возвращается.
+                p Если возвращаемый товар был предоплачен, возврат денежных средств осуществляется на&nbsp;ту&nbsp;банковскую карту, с&nbsp;которой была произведена предоплата, или на&nbsp;тот qiwi кошелек, на&nbsp;который был выставлен счет. В&nbsp;случае оплаты заказа курьеру, деньги будут возвращены вам почтовым или банковским переводом.
+
+    // Этот скрипт на сервере удалять
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "images/temp/payment.jpg",opacity: 0.5,top: 0,left: -4,center: false,clip: true,show: false});});
+
+
+
+
+

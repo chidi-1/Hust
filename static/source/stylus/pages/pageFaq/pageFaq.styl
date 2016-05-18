@@ -1,0 +1,61 @@
+.accordeon
+  .acc_trigger
+    background #fff
+    display block
+    box-shadow none 
+    text-shadow none
+    position relative 
+    border 1px solid #dfdfdf
+    border-radius 5px
+    padding 11px 45px 11px 78px
+    margin-bottom 23px
+    cursor pointer
+
+    span
+      color #8e8e8e
+
+    .arrow-left
+      position absolute 
+      top 0 
+      left 0 
+      content "" 
+      width 62px
+      bottom 0
+      background #f8f7f6 
+
+    .arrow-left:after
+      position absolute 
+      content "" 
+      top 50%
+      margin-top -7px
+      left 14px
+      sprite($icon_arrow_right)
+
+    .arrow-right
+      position absolute 
+      top 0 
+      right 0 
+      width 34px 
+      height 100% 
+
+    .arrow-right:after
+      position absolute
+      content ""
+      right 12px
+      top 50% 
+      margin-top -4px
+      sprite($icon_arrow_top_s)
+
+  .acc_trigger.active
+    cursor default
+
+    .arrow-right:after
+      sprite($icon_arrow_bottom_s)
+
+  .acc_container
+    .block
+      margin-bottom 20px
+      border 1px solid #dfdfdf
+      border-radius 5px
+      padding 17px 35px 20px 78px
+      text-align justify

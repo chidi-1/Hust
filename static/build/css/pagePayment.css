@@ -1,0 +1,20 @@
+.payment-list {
+  display: block;
+}
+.payment-list li {
+  margin-right: 14px;
+}
+.payment-list li .img {
+  display: block;
+}
+.payment-list li .img img {
+  max-height: 50px;
+  filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+  transition: all 0.2s ease-in-out;
+  -webki-transition: all 0.2s ease-in-out;
+}
+.payment-list li .img:hover img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}

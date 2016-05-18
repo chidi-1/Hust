@@ -13,6 +13,11 @@ html
         link(rel='stylesheet', href="css/pageContacts.css")
         link(rel='stylesheet', href="css/pageHistory.css")
         link(rel='stylesheet', href="css/pageItem.css")
+        link(rel='stylesheet', href="css/pageMode.css")
+        link(rel='stylesheet', href="css/pagePayment.css")
+        link(rel='stylesheet', href="css/pageSale.css")
+        link(rel='stylesheet', href="css/pageFaq.css")
+        link(rel='stylesheet', href="css/pageBlog.css")
 
         script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
         script if (/*@cc_on!@*/false) {            document.documentElement.className += ' ie10';        }
@@ -31,6 +36,8 @@ html
     include mixins
 
     body
-        include header
-        block content
-        include  footer
+        .page-wrap
+            include header
+            block content
+            .psevdofooter
+            include  footer

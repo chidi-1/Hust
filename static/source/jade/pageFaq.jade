@@ -1,0 +1,126 @@
+block vars
+    - var title='Title'
+
+extends partials/layout
+
+block content
+    section.detailed-search
+        .detailed-search-icon
+
+        form(action="" method="post").wrapper.detailed-search-form
+            .justifyed
+                .label-select
+                    select(data-placeholder='Выбор раздела').js--select-styled
+                        option(value="value_1" disabled selected) Выбор раздела
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор коллекции').js--select-styled
+                        option(value="value_1" disabled selected) Выбор коллекции
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+                .label-select
+                    select(data-placeholder='Выбор размера').js--select-styled
+                        option(value="value_1" disabled selected) Выбор размера
+                        option(value="value_2") value_2
+                        option(value="value_3") value_3
+                        option(value="value_4") value_4
+
+            .justifyed
+                .label-slider
+                    span Цена:
+                    input(type="text").range_min.slider-input.inp
+                    div(data-index="0" data-min_range="50" data-step="10" data-min-current="2000" data-max-current="7000" data-max_range="10000").slider-range
+                    input(type="text").range_max.slider-input.inp
+
+            .detailed-search-params
+                .checkboxes
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span новинки
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span в наличии
+
+                    label.checkbox
+                        input(type="checkbox" name="")
+                        .psevdochecbox
+                        span со скидкой
+
+                .radios
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span рейтинг
+
+                    label.radio.price-top
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio.price-bottom
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span цена
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span новинки
+
+                    label.radio
+                        input(type="radio" name="name")
+                        .psevdoradio
+                        span название
+
+
+            input(type="submit" value=" Искать").btn.btn-xl
+
+
+    section
+        .wrapper
+            .title.border-bottom вопрос-ответ
+
+            .accordeon
+                .acc_trigger
+                    i.arrow-left
+                    i.arrow-right
+                    span Lorem ipsum dolor is amet?
+
+                .acc_container
+                    .block
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo consequat. Duis aute irure dolor in&nbsp;reprehenderit in&nbsp;voluptate velit esse cillum dolore eu&nbsp;fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in&nbsp;culpa qui officia deserunt mollit anim id&nbsp;est laborum. Sed ut&nbsp;perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab&nbsp;illo inventore veritatis et&nbsp;quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut&nbsp;labore et&nbsp;dolore magnam aliquam quaerat voluptatem.
+
+                .acc_trigger
+                    i.arrow-left
+                    i.arrow-right
+                    span Lorem ipsum dolor is amet?
+
+                .acc_container
+                    .block
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo consequat. Duis aute irure dolor in&nbsp;reprehenderit in&nbsp;voluptate velit esse cillum dolore eu&nbsp;fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in&nbsp;culpa qui officia deserunt mollit anim id&nbsp;est laborum. Sed ut&nbsp;perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab&nbsp;illo inventore veritatis et&nbsp;quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut&nbsp;labore et&nbsp;dolore magnam aliquam quaerat voluptatem.
+
+                .acc_trigger
+                    i.arrow-left
+                    i.arrow-right
+                    span Lorem ipsum dolor is amet?
+
+                .acc_container
+                    .block
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo consequat. Duis aute irure dolor in&nbsp;reprehenderit in&nbsp;voluptate velit esse cillum dolore eu&nbsp;fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in&nbsp;culpa qui officia deserunt mollit anim id&nbsp;est laborum. Sed ut&nbsp;perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab&nbsp;illo inventore veritatis et&nbsp;quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut&nbsp;labore et&nbsp;dolore magnam aliquam quaerat voluptatem.
+
+
+    // Этот скрипт на сервере удалять
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "images/temp/faq.jpg",opacity: 0.5,top: 0,left: -4,center: false,clip: true,show: false});});
+
+
+
+
+
